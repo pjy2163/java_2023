@@ -1,0 +1,91 @@
+body {
+    background-color: skyblue;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 120px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  input::placeholder {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+  
+  .form,
+  .greetings {
+    display: none;
+    margin-top: -70px;
+  }
+  
+  .showing {
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+  }
+  
+  .js-toDoForm {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .js-weather {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .bgImage {
+    
+      position:absolute;
+      width:30%;
+      height:30%;
+      left: 0px;
+      top: 0px;
+      right:0px;
+      bottom:0px;
+      z-index: -1;
+      opacity:70%;
+      
+     animation: fadeIn 0.5s linear;
+  }
